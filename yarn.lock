@@ -2174,6 +2174,11 @@
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.2.tgz"
   "version" "1.15.2"
 
+"font-family-system-ui@^0.0.1":
+  "integrity" "sha512-8Wbex/o9sEhlV8BuLf7NfffvNZg3xfV7TjjLOrI9T1zCRnvtWDhirvkPQH3aA8GoLMwltWfLtCmKfxzZA0eJww=="
+  "resolved" "https://registry.npmjs.org/font-family-system-ui/-/font-family-system-ui-0.0.1.tgz"
+  "version" "0.0.1"
+
 "forwarded@0.2.0":
   "integrity" "sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow=="
   "resolved" "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz"
