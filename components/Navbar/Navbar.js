@@ -3,6 +3,7 @@ import styles from "./Navbar.module.css";
 import { LogoH, ArrowDown } from "../icons";
 import links from "./Navbar-script";
 import { useRouter } from "next/router";
+
 const Navbar = () => {
   const router = useRouter();
   return (

@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import styles from "../styles/Deck.module.css";
 import React from 'react'; 
+
 // import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
-// import SearchBar from "../components/SearchBar/SearchBar";
+//import SearchBar from "../components/SearchBar/SearchBar";
 import ProjectCardsContainer from "../components/ProjectCardsContainer/ProjectCardsContainer";
+
 
 export default function Home() {
   // const prettifiedData = JSON.stringify(data, null, 2);
@@ -24,7 +26,7 @@ export default function Home() {
 
         {/* <p>Now open source</p> */}
       </div>
-      <ProjectCardsContainer/>
+     <ProjectCardsContainer/>
     </div>
   );
 }

@@ -12,11 +12,18 @@ const Layout = ({
     <>
       <Head>
         <title>{pageTitle}</title>
+        <meta charset="UTF-8" />
         <meta property="og:title" content={pageTitle} key="title" />
         <meta name="description" content={description} />
         <meta itemProp="image" content={img} />
+        <meta property="og:locale" content="en_US" />
         {/* <meta property="og:url" content="" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta property="og:type" content="website" />
+        <meta name="apple-mobile-web-app-capable" content="no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        {/*<meta name="apple-mobile-web-app-title" content="" />*/}
       </Head>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
