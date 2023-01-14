@@ -3,11 +3,11 @@ import Head from "next/head";
 import { GA_TRACKING_ID } from "./gtag";
 import Script from "next/script";
 
-const Layout = ({
-    pageTitle = "NEAR PROJECTS",
+const Layout = (
+   { pageTitle = "NEAR PROJECTS",
     description = "Decentralized ecosystem aggregation about NEAR on NEAR",
-    img = "/assets/logo.png",
-}) => {
+    img = "/assets/logo.png",}
+) => {
   return (
     <>
       <Head>
