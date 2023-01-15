@@ -1,5 +1,5 @@
 {
-  "name": "onboardao",
+  "name": "Awesome Near Project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,7 +36,6 @@
     "react": "18.2.0",
     "react-calendly": "^4.0.1",
     "react-dom": "18.2.0",
-    "react-feather": "^2.0.10",
     "react-router-dom": "^6.3.0",
     "react-spinners": "^0.13.7",
     "react-web-share": "^1.1.6",

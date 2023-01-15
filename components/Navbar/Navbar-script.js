@@ -1,43 +1,30 @@
-import {
-  Calendar,
-  Twitter,
-  Telgram,
-  Medium,
-  Instgram,
-  Discord,
-} from "../icons";
+import { FiTwitter } from 'react-icons/fi';
 
 const links = [
   {
-    icon: <Discord />,
-    url: "/discord",
+    id: 1,
+    icon: '',
+    text: "Projects",
+    url: "/projects",
   },
   {
-    icon: <Calendar />,
-    url: "/luma",
+    id: 2,
+    icon: '',
+    text: "Ranking",
+    url: "/ranking",
   },
   {
-    icon: <Twitter />,
-    url: "/twitter",
+    id: 3,
+    icon: '',
+    text: "Articles",
+    url: "/articles",
   },
   {
-    icon: <Telgram />,
-    url: "/telegram",
-    nested_urls: [
-      { title: "NYC", url: "/tg-nyc" },
-      { title: "Miami", url: "/tg-mia" },
-      { title: "Austin", url: "/tg-atx" },
-      { title: "SF", url: "/tg-sf" },
-    ],
-  },
-  {
-    icon: <Medium />,
-    url: "/blog",
-  },
-  {
-    icon: <Instgram />,
-    url: "/instagram",
-  },
+    id: 4,
+    icon: <FiTwitter size={20} style={{marginRight: '.3rem'}}/>,
+    text: 'Twitter',
+    url: 'https://twitter.com/awesome_near'
+  }
 ];
 
 export default links;

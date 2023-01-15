@@ -1,9 +1,9 @@
-import styles from "../styles/Deck.module.css";
+//import styles from "../styles/Deck.module.css";
 import Layout from "../components/Layout";
 
 const Submit = () => {
   return (
-    <div className={styles.container}>
+    <div className=''>
       <Layout pageTitle={pageTitle} />
       <iframe
         className="clickup-embed clickup-dynamic-height"

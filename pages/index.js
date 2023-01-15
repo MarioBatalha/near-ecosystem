@@ -2,8 +2,9 @@
 import styles from "../styles/Deck.module.css";
 import React from 'react'; 
 
-// import styles from "../styles/Home.module.css";
+//import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import MainSection from "../components/MainSection/Main-section";
 //import SearchBar from "../components/SearchBar/SearchBar";
 import ProjectCardsContainer from "../components/ProjectCardsContainer/ProjectCardsContainer";
 import Footer from "../components/Footer/Footer";
@@ -14,7 +15,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Layout pageTitle="NEAR Projects" />
-      <div className={styles.pageHeader}>
+      <MainSection />
+
+      {/* <div className={styles.pageHeader}>
           <h1>
             Projects on NEAR
             <a href="https://nearprojects.com/code" target="_blank" rel="noopener noreferrer">
@@ -22,11 +25,11 @@ export default function Home() {
             </a>
           </h1>
          <p>Decentralized list of projects being built on NEAR Protocol and the Aurora chain</p>
-         {/* <SearchBar/> */}
+         {/* <SearchBar/> 
 
-        {/* <p>Now open source</p> */}
+         <p>Now open source</p> 
       </div>
-     <ProjectCardsContainer/>
+     <ProjectCardsContainer/>*/}
      <Footer />
     </div>
   );
