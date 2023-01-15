@@ -44,7 +44,7 @@ const Navbar = () => {
             alt="Awesome Near logo"
           />
           <button className={styles.navToggle} onClick={handleToggleLinks}>
-            <HiMenuAlt2 />
+            <HiMenuAlt2 size={30}/>
           </button>
           <ul className={styles.links} ref={linksRef}>
             {links.map((link) => {
