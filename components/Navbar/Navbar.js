@@ -43,9 +43,9 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, icon, url, text } = link;
               return (
-                <li key={id} className={styles.linksItem}>
+                <li key={id}>
                   <Link href={url}>
-                    <div>
+                    <div className={styles.navLinks}>
                       {icon}
                       {text}
                     </div>
