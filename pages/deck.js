@@ -5,13 +5,7 @@ const deck = () => {
   return (
     <div className={styles.container}>
       <Layout pageTitle="Embed A Deck" />
-      <iframe
-        src=""
-        frameBorder="0"
-        width="1440"
-        height="839"
-        allowFullScreen
-      ></iframe>
+      <iframe src="" width="1440" height="839" allowFullScreen />
     </div>
   );
 };

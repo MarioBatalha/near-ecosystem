@@ -1,11 +1,7 @@
-import ProjectCardsContainer from '../../components/ProjectCardsContainer/ProjectCardsContainer.js';
+import ProjectCardsContainer from "../../components/ProjectCardsContainer/ProjectCardsContainer.js";
 
 const ProjectDetails = () => {
-    return (
-        <>
-            <ProjectCardsContainer />
-        </>
-    )
-}
+  return <ProjectCardsContainer />;
+};
 
 export default ProjectDetails;

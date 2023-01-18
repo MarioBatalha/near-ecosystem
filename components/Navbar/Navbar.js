@@ -30,15 +30,8 @@ const Navbar = () => {
     <nav className={styles.navContainer}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <Link href='/'>
-            <a  href='/'>
-          <Image
-              width={200}
-              height={50}
-              src={Logo}
-              alt="Awesome Near logo"
-            />
-         </a>
+          <Link href="/">
+            <Image width={200} height={50} src={Logo} alt="Awesome Near logo" />
           </Link>
           <button className={styles.navToggle} onClick={handleToggleLinks}>
             <HiMenuAlt2 size={30} />
@@ -52,25 +45,25 @@ const Navbar = () => {
               return (
                 <li key={id} className={styles.linksItem}>
                   <Link href={url}>
-                  <a>
+                    <div>
                       {icon}
                       {text}
-                  </a>
+                    </div>
                   </Link>
                 </li>
               );
             })}
           </ul>
           <div className={styles.searchContainer}>
-          <div className={styles.searchInput}>
-            <FaSearch
-              size={18}
-              style={{ margin: "0 5px 0 0" }}
-              color="#2f2f2f"
-            />
-            <input type="search" placeholder="Search projects or tokens" />
+            <div className={styles.searchInput}>
+              <FaSearch
+                size={18}
+                style={{ margin: "0 5px 0 0" }}
+                color="#2f2f2f"
+              />
+              <input type="search" placeholder="Search projects or tokens" />
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </nav>

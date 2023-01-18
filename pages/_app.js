@@ -2,13 +2,10 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "../components/gtag";
 
-import Navbar from '../components/Navbar/Navbar.js';
-import Footer from '../components/Footer/Footer.js';
+import Navbar from "../components/Navbar/Navbar.js";
+import Footer from "../components/Footer/Footer.js";
 
 import "../styles/globals.css";
-
-import Context from './Context';
-
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -26,11 +23,11 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <>
-    <Navbar />
+    <div>
+      <Navbar />
       <Component {...pageProps} />
-    <Footer />
-    </>
+      <Footer />
+    </div>
   );
 }
 

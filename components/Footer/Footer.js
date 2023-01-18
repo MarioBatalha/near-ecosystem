@@ -20,7 +20,7 @@ const Footer = () => {
           {footerLinks.map((link) => {
             return (
               <li key={link.id}>
-                <a href={link.url} target='_blank'>
+                <a href={link.url} target="_blank" rel="noreferrer">
                   <span>
                     {link.title}
                     &#x2197;
@@ -33,7 +33,10 @@ const Footer = () => {
       </div>
       <div className={styles.footerContainerMade}>
         <p>
-          Made with ♥ by <a href="https://nearfans.com/" target='blank'>NEARFANS</a>
+          Made with ♥ by{" "}
+          <a href="https://nearfans.com/" target="_blank" rel="noreferrer">
+            NEARFANS
+          </a>
         </p>
       </div>
     </footer>

@@ -48,7 +48,7 @@ const MainSection = () => {
               {awesomeLinks.map((link) => {
                 const { id, text, url, img } = link;
                 return (
-                  <a href={url} key={id} target="_blank">
+                  <a href={url} key={id} target="_blank" rel='noreferrer'>
                     <Image
                       src={img}
                       alt={text}
@@ -66,25 +66,25 @@ const MainSection = () => {
         </div>
         <div className={styles.cardContainer}>
           <div className={styles.heroCard}>
-            <Image src={heroImg} width={60} height={40} />
+            <Image src={heroImg} width={60} height={40} alt='near ecosystem' />
             <h2 className={styles.cardTitle}>
               Near weak ecosystem provide high security
             </h2>
           </div>
           <div className={styles.heroCard}>
-            <Image src={heroImg} width={60} height={40} />
+            <Image src={heroImg} width={60} height={40} alt='near ecosystem'/>
             <h2 className={styles.cardTitle}>
               Near weak ecosystem provide high security
             </h2>
           </div>
           <div className={styles.heroCard}>
-            <Image src={heroImg} width={60} height={40} />
+            <Image src={heroImg} width={60} height={40} alt='near ecosystem'/>
             <h2 className={styles.cardTitle}>
               Near weak ecosystem provide high security
             </h2>
           </div>
           <div className={styles.heroCard}>
-            <Image src={heroImg} width={60} height={40} />
+            <Image src={heroImg} width={60} height={40} alt='near ecosystem'/>
             <h2 className={styles.cardTitle}>
               Near weak ecosystem provide high security
             </h2>
@@ -124,43 +124,43 @@ const MainSection = () => {
           <h2>Trending projects</h2>
           <div className={styles.project}>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem'/>
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           <div className={styles.trendingItem}>
-            <Image src={heroImg} className={styles.img} width={60} height={60} />
+            <Image src={heroImg} className={styles.img} width={60} height={60} alt='near ecosystem' />
             <p>Title</p>
           </div>
           </div>
@@ -168,7 +168,7 @@ const MainSection = () => {
         <div className={styles.trendingContainer}>
       <div className={styles.trendingCard}>
         <div className={styles.cardHeader}>
-          <Image src={heroImg} alt="" width={70} height={70} />
+          <Image src={heroImg} width={70} height={70} alt='near ecosystem' />
           <h2>NFT</h2>
           <a href='#' className={styles.explore} >
             Explore
@@ -176,7 +176,7 @@ const MainSection = () => {
           </a>
         </div>
         <div className={styles.cardBody}>
-          <Image src={heroImg} alt="" width={50} height={50} className={styles.img} />
+          <Image src={heroImg} alt='near ecosystem' width={50} height={50} className={styles.img} />
           <div>
             <h3>Project name</h3>
             <p className={styles.cardBodySubtitle}>Project category</p>
