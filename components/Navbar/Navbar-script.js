@@ -29,7 +29,7 @@ const links = [
     id: 5,
     icon: '',
     text: '+Submit',
-    url : '/plus-submit'
+    url : '/plusSubmit'
   }
 ];
 
