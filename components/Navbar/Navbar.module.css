@@ -1,5 +1,5 @@
 .navContainer {
-  background: #FFF;
+  width: 100vw;
 }
 
 .navCenter {
@@ -16,10 +16,12 @@
 .navToggle {
   font-size: 1.5rem;
   color: #2f2f2f;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-color: transparent;
   transition: all 0.3s linear;
   cursor: pointer;
+  padding: .3rem;
+  border-radius: .5rem;
 }
 
 .links span {
@@ -43,11 +45,11 @@
   margin: 0.1rem;
 }
 
-.links li:last-child {
+.links li:nth-child(4) {
   color: #0152cc;
 }
 
-.links li:last-child:hover {
+.links li:nth-child(4):hover {
   color: #0152cc;
 }
 
@@ -59,12 +61,17 @@
 
 .linksContainer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 0;
   overflow: hidden;
   transition: all 0.3s linear;
+}
+
+.linksItem  a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .searchInput {
@@ -99,7 +106,15 @@
   height: 10rem;
 }
 
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 800px) {
+ 
   .navCenter {
     max-width: 1170px;
     margin: 0 auto;
@@ -127,5 +142,13 @@
   .links a:hover {
     padding: 0;
     background: transparent;
+  }
+
+  .searchContainer {
+    display: flex;
+  }
+
+  .searchContainer > a {
+    margin: 0 0.5rem;
   }
 }

@@ -1,11 +1,18 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "../components/gtag";
 
+import Navbar from '../components/Navbar/Navbar.js';
+import Footer from '../components/Footer/Footer.js';
+
 import "../styles/globals.css";
+
+import Context from './Context';
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
@@ -20,7 +27,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} />{" "}
+    <Navbar />
+      <Component {...pageProps} />
+    <Footer />
     </>
   );
 }

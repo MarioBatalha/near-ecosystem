@@ -1,0 +1,54 @@
+.trendingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.trendingCard {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore:hover {
+    text-decoration: underline;
+}
+
+.cardBody {
+    width: 100%;
+    border-radius: 1rem;
+    padding: .8rem;
+    margin: .5rem;
+    transition: .5s all ease;
+}
+
+.cardBody:hover {
+    background: #FFF;;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardBodySubtitle {
+    color: #cececedf
+}

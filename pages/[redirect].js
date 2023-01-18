@@ -7,17 +7,17 @@ const RedirectLinks = {
 
 const Redirect = () => {
   useEffect(() => {
-    const url = RedirectLinks[window.location.pathname];
+    const url = RedirectLinks[window?.location.pathname];
     if (url) {
-      window.location.href = url;
+      window?.location.href = url;
     } else if (
-      window.location.pathname === window.location.pathname.toLowerCase()
+      window?.location.pathname === window?.location.pathname.toLowerCase()
     ) {
       // Route is already lowercase but matched catch all
       // page not found, display 404
       window.location.href = "/";
     } else {
-      window.location.href = window.location.pathname.toLowerCase();
+      window?.location.href = window?.location.pathname.toLowerCase();
     }
   }, []);
 

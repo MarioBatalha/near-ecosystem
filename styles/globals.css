@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'system-ui', sans-serif;
-  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 a {

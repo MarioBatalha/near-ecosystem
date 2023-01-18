@@ -19,10 +19,10 @@ function SearchBar(props) {
   }
 
   return (
-    <div class={styles.SearchBar}>
+    <div className={styles.SearchBar}>
       <button onClick={handleSearch}><Search size={20}/></button>
       <input 
-        class={styles.SearchBox} 
+        className={styles.SearchBox} 
         type="text" 
         value={searchTerm} onChange={handleChange} onKeyPress={handleKeyPress} 
         placeholder={"Search project name..."}

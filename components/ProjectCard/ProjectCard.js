@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProjectCard.module.css";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import { GitHub, Linkedin, Facebook, Twitter, Globe } from 'react-feather';
 
 /*
@@ -94,7 +95,7 @@ const ProjectCard = (props) => {
     <div className={styles.container}>
       <div className={styles.projectTitle}>
         <div className={styles.projectIconWrapper}>
-          <img src={props.projectData.Icon}/>
+          <Image src={props.projectData.Icon} alt={props.projectData.Title} width={50} height={50} />
         </div>
         <div className={styles.projectInfo}>
           <span className={styles.projectName}>{props.projectData.ProjectName}</span>
