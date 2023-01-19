@@ -1,0 +1,30 @@
+.cardContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+
+}
+
+.heroCard {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.heroCard:hover {
+    background: #F4F4F4;
+}
+
+.cardTitle {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: .5rem;
+    padding-right: 1rem;
+}

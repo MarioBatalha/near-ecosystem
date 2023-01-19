@@ -11,132 +11,6 @@
     padding: 2rem;
 }
 
-.awesomeHome {
-    width: 60vw;
-    height: auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.awesomeHome > h1 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 29pt;
-}
-
-.heroActions {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.heroActions > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(34,34,34,.05);
-    border-radius: 1.1rem;
-    display: inline-flex;
-    font-size: 14px;
-    font-weight: 600;
-    height: 2.5rem;
-    margin: 0.2rem;
-    padding: 0.2rem 0.6rem 0.2rem 0.2rem;
-    text-decoration: none;
-    transition: all .15s ease;
-}
-
-
-.heroActions > a:hover {
-    background: #F4F4F4;
-    transition: all 0.3s linear;
-    filter: brightness(0.9);
-    cursor: pointer;
-}
-
-.heroActions .linkImg {
-    border-radius: 50%;
-}
-
-.cardContainer {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: .5rem;
-
-}
-
-.heroCard {
-    display: flex;
-    flex-direction: row;
-    margin: .5rem;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-
-.heroCard:hover {
-    background: #F4F4F4;
-}
-
-.cardTitle {
-    font-size: 14px;
-    font-weight: 600;
-    padding-left: .5rem;
-    padding-right: 1rem;
-}
-
-.nearProtocol {
-    width: 100vw;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: flex-start;
-    background: #FFF;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    overflow-x: scroll;
-    white-space: nowrap;
-}
-
-.nearCard {
-    width: 30rem;
-    padding: .2rem;
-    margin-left: 2rem;
-    border-right: 1px solid #D8DBFF;
-    display: flex
-}
-
-.nearCard h1 {
-    font-size: 30px;
-    font-weight: 900;
-    margin-left: 3rem;
-}
-
-.heroCardDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 1rem;
-    margin-right: 1rem;
-}
-
-.heroCardDetailsTitle {
-    font-size: 12pt;
-}
-
-.heroCardDetailsSubtitle {
-    font-size: 8pt;
-}
-
 .sucess {
     color: #4BB543;
 }
@@ -144,58 +18,6 @@
 .danger {
     color: #ff4444;
 }
-
-.trendingContainer {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem
-}
-
-.project {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem
-}
-
-.trendingCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.trendingItem {
-    width: 6rem;
-    margin: .5rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.trendingItem > img{
-    border-radius: 50%;
-}
-
-.trendingItem > p{
-    margin: .5rem;
-}
-
-.trendingItem:hover {
-    background: #F4F4F4;
-}
-
-.img {
-    border-radius: 50%;
-} 
-
 
 .trendingContainer {
     display: flex;
@@ -245,12 +67,13 @@
     transition: .5s all ease;
 }
 
-.cardBody > div {
+.cardBody>div {
     margin: .5rem;
 }
 
 .cardBody:hover {
-    background: #FFF;;
+    background: #FFF;
+    ;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

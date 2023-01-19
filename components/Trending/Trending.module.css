@@ -1,0 +1,50 @@
+.trendingContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem
+}
+
+.trendingCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendingItem {
+    width: 7rem;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendingItem>img {
+    border-radius: 50%;
+}
+
+.trendingItem>p {
+    margin: .5rem;
+}
+
+.trendingItem:hover {
+    background: #F4F4F4;
+}
+
+.img {
+    border-radius: 50%;
+}

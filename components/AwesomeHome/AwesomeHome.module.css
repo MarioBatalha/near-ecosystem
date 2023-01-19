@@ -1,0 +1,53 @@
+.awesomeHome {
+    width: 60vw;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.awesomeHome > h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 29pt;
+}
+
+.heroActions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.heroActions > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(34,34,34,.05);
+    border-radius: 1.1rem;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    height: 2.5rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0.6rem 0.2rem 0.2rem;
+    text-decoration: none;
+    transition: all .15s ease;
+}
+
+
+.heroActions > a:hover {
+    background: #F4F4F4;
+    transition: all 0.3s linear;
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.heroActions .linkImg {
+    border-radius: 50%;
+}

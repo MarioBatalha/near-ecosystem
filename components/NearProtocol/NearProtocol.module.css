@@ -1,0 +1,40 @@
+.nearProtocol {
+    width: 100vw;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    background: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.nearCard {
+    width: 30rem;
+    padding: .2rem;
+    margin-left: 2rem;
+    border-right: 1px solid #D8DBFF;
+    display: flex
+}
+
+.nearCard h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 3rem;
+}
+
+.heroCardDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    margin-right: 1rem;
+}
+
+.heroCardDetailsTitle {
+    font-size: 12pt;
+}
+
+.heroCardDetailsSubtitle {
+    font-size: 8pt;
+}
