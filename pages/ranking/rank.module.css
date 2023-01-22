@@ -9,7 +9,8 @@
   }
 }
 
-.icon {color: #9FA9BC;
+.icon {
+    color: #9FA9BC;
     margin-top: -5px;
     margin-left: 8px;
 }
@@ -17,7 +18,11 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 24px 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #f4f4f4;
+  opacity: .5rem;
+  color: #2f2f2f
 }
 
 .filtersSearch {
@@ -37,57 +42,55 @@
 .filtersSearchInput {
   background: transparent;
   border: none;
-  color: #4C84FF;
-  font-size: 1.4rem;
+  color: #2f2f2f;
+  font-size: 1rem;
   font-weight: bold;
   outline: none;
-  padding: 5px 10px;
+  padding: 1rem;
   width: 100%;
 }
 
 .filtersSearchIcon {
   background: transparent;
-  font-size: 1.4rem;
-  color: #9FA9BC;
+  font-size: 1rem;
+  color: #2f2f2f;
 }
 
 .filtersSearchIcon:hover {
-  color: #4C84FF;
+  color: #2f2f2f;
 }
 
 .filtersItem {
+  background: transparent;
   align-items: center;
-  background-color: #fff;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .07);
-  color: #9FA9BC;
+  border: none;
+  color: #2f2f2f;
   display: flex;
   flex-wrap: nowrap;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: normal;
   justify-content: center;
   margin: 0 8px;
-  padding: 10px;
+  padding: .5rem;
   white-space: nowrap;
 }
 
 .filtersItem:active {
-  background-color: #4C84FF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #fff;
+  background: #fff;
+  color: #2f2f2f;
 }
 
 .loadProcess {
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .errorProcess {
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
   color: #ff4f5a;
 }
 
@@ -95,7 +98,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 16px;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
   margin: 0 8px;
@@ -122,14 +125,13 @@
 .contact {
   width: 100%;
   align-items: center;
-  background-color: white;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07);
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 20px;
   overflow: hidden;
   padding: 5;
@@ -145,7 +147,7 @@
 }
 
 .contact__data:nth-child(2) {
-  color: #000;
+  color: #2f2f2f;
 }
 
 .contactAvatar {
@@ -170,5 +172,5 @@
 }
 
 .contactData:nth-child(2) {
-  color: #4c84ff;
+  color: #2f2f2f;
 }

@@ -22,7 +22,7 @@ const Ranking = () => {
         })
         .then((data) => setData(data));
     } catch (error) {
-      console.log(error, "Erro ao carregar dados ");
+      console.log(error, "something went wrong");
     }
   };
 
@@ -49,7 +49,6 @@ const Ranking = () => {
               <button
                 className={styles.filtersSearchInput}
                 type="submit"
-               
               >
               </button>
             </div>
