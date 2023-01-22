@@ -5,7 +5,7 @@ import styles from "./rank.module.css";
 
 const Ranking = () => {
   const [error, setError] = useState(null);
-  const [isLoad, setIslLoad] = useState(false);
+  const [isLoad, setIslLoad] = useState(true);
   const [data, setData] = useState([]);
 
   const handleFetchData = async () => {
@@ -32,7 +32,7 @@ const Ranking = () => {
   console.log(data);
   if (error) {
     return <div className={styles.errorProcess}>Error: {error.message}</div>;
-  } else if (isLoad) {
+  } else if (!isLoad) {
     return <div className={styles.loadProcess}>Loading...</div>;
   } else {
     return (
