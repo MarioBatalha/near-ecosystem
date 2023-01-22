@@ -71,7 +71,7 @@ const Ranking = () => {
           </div>
           <section className={styles.contacts}>
             <article className={styles.contact}>
-              <span className={styles.contactAvatar}></span>
+              <span ></span>
               <span className={styles.contactData}>Project Name</span>
               <span className={styles.contactData}>Category</span>
               <span className={styles.contactData}>ABBV</span>
