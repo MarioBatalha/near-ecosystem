@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./rank.module.css";
+
 
 const Ranking = () => {
   const [error, setError] = useState(null);
@@ -49,7 +51,6 @@ const Ranking = () => {
                 type="submit"
                
               >
-                <i className="fa fa-search" />
               </button>
             </div>
             <button className={styles.filtersItem} type="submit">
@@ -70,10 +71,10 @@ const Ranking = () => {
           </div>
           <section className={styles.contacts}>
             <article className={styles.contact}>
-              <span className={styles.contact__avatar}></span>
-              <span className={styles.contact__data}>Project Name</span>
-              <span className={styles.contact__data}>Category</span>
-              <span className={styles.contact__data}>ABBV</span>
+              <span className={styles.contactAvatar}></span>
+              <span className={styles.contactData}>Project Name</span>
+              <span className={styles.contactData}>Category</span>
+              <span className={styles.contactData}>ABBV</span>
             </article>
           </section>
         </div>
@@ -83,13 +84,15 @@ const Ranking = () => {
             <div className={styles.item} key={item.id}>
               <section className={styles.contacts}>
                 <img
-                  className={styles.contact__avatar}
+                  width={30}
+                  height={30}
+                  className={styles.contactAvatar}
                   src={item.Icon}
-                  alt=""
-                ></img>
-                <span className={styles.contact__data}>{item.ProjectName}</span>
-                <span className={styles.contact__data}>{item.Category}</span>
-                <span className={styles.contact__data}>{item.ABBV}</span>
+                  alt={item.projectName}
+                />
+                <span className={styles.contactData}>{item.ProjectName}</span>
+                <span className={styles.contactData}>{item.Category}</span>
+                <span className={styles.contactData}>{item.ABBV}</span>
               </section>
             </div>
           ))}
