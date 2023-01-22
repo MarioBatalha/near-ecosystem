@@ -39,6 +39,7 @@
 .footerContainerNearMenu  ul > li{
     padding: .5rem;
     margin:.5rem;
+    cursor: pointer;
 }
 
 .footerContainerMade a {

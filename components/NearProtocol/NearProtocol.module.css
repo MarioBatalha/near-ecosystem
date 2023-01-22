@@ -14,7 +14,8 @@
     padding: .2rem;
     margin-left: 2rem;
     border-right: 1px solid #D8DBFF;
-    display: flex
+    display: flex;
+    cursor: pointer;
 }
 
 .nearCard h1 {
