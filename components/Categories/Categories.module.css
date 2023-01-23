@@ -13,6 +13,7 @@
     margin: 0 8px;
     padding: .5rem;
     white-space: nowrap;
+    cursor: pointer;
   }
   
   .filtersItem:active {
