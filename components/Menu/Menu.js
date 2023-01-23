@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import styles from "./Menu.module.css";
 
 const Menu = ({ data }) => {
@@ -7,7 +7,7 @@ const Menu = ({ data }) => {
             {data.map((item) => (
             <div className={styles.item} key={item.id}>
               <section className={styles.contacts}>
-                <Image
+                <img
                   src={item.Icon}
                   alt={item.projectName}
                   width={30}
