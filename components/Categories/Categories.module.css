@@ -1,0 +1,22 @@
+
+.filtersItem {
+    background: transparent;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: #2f2f2f;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    font-weight: normal;
+    justify-content: center;
+    margin: 0 8px;
+    padding: .5rem;
+    white-space: nowrap;
+  }
+  
+  .filtersItem:active {
+    background: #fff;
+    color: #2f2f2f;
+  }
+  

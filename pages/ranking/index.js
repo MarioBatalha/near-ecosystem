@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Categories from "./../../components/Categories/Categories";
 import styles from "./rank.module.css";
+import Menu from "../../components/Menu/Menu";
 
 
 const Ranking = () => {
-  const [error, setError] = useState(null);
   const [isLoad, setIslLoad] = useState(true);
   const [data, setData] = useState([]);
+  const allCategories = ['ALL','NEAR','AURORA','OCTOPUS', ...new Set(data.map((item) => item.Category))];
+  const [categories, setCategories] = useState(allCategories);
+  const [menu, setMenu] = useState(data);
 
   const handleFetchData = async () => {
     try {
@@ -20,18 +24,30 @@ const Ranking = () => {
             throw new Error("Network response error");
           }
         })
-        .then((data) => setData(data));
+        .then((data) => {
+          setData(data)
+        });
+  
     } catch (error) {
       console.log(error, "something went wrong");
     }
   };
 
+  const filterItems = (category) => {
+    if (category === 'ALL') {
+      setMenu(data);
+      return;
+    }
+    const newItems = data.filter(item => item.Series === category);
+    setMenu(newItems);
+  };
+
   useEffect(() => {
     handleFetchData();
   }, [data]);
-  console.log(data);
-  if (error) {
-    return <div className={styles.errorProcess}>Error: {error.message}</div>;
+
+  if (data.length === 0) {
+    return <div className={styles.errorProcess}>Error loading data</div>;
   } else if (!isLoad) {
     return <div className={styles.loadProcess}>Loading...</div>;
   } else {
@@ -43,7 +59,7 @@ const Ranking = () => {
               <input
                 type="text"
                 className={styles.filtersSearchInput}
-                placeholder="Pesquisar"
+                placeholder="Search"
               />
 
               <button
@@ -52,21 +68,7 @@ const Ranking = () => {
               >
               </button>
             </div>
-            <button className={styles.filtersItem} type="submit">
-              All
-            </button>
-
-            <button className={styles.filtersItem} type="submit">
-              Project Name 
-            </button>
-
-            <button className={styles.filtersItem} type="submit">
-              Category 
-            </button>
-
-            <button className={styles.filtersItem} type="submit">
-              ABBV
-            </button>
+            <Categories categories={categories} filterItems={filterItems} />
           </div>
           <section className={styles.contacts}>
             <article className={styles.contact}>
@@ -77,24 +79,8 @@ const Ranking = () => {
             </article>
           </section>
         </div>
-
         <div>
-          {data.map((item) => (
-            <div className={styles.item} key={item.id}>
-              <section className={styles.contacts}>
-                <img
-                  width={30}
-                  height={30}
-                  className={styles.contactAvatar}
-                  src={item.Icon}
-                  alt={item.projectName}
-                />
-                <span className={styles.contactData}>{item.ProjectName}</span>
-                <span className={styles.contactData}>{item.Category}</span>
-                <span className={styles.contactData}>{item.ABBV}</span>
-              </section>
-            </div>
-          ))}
+          <Menu data={menu} />
         </div>
       </div>
     );
