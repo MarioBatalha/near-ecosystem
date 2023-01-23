@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Menu.module.css";
 
 const Menu = ({ data }) => {
@@ -6,7 +7,7 @@ const Menu = ({ data }) => {
             {data.map((item) => (
             <div className={styles.item} key={item.id}>
               <section className={styles.contacts}>
-                <img
+                <Image
                   width={30}
                   height={30}
                   className={styles.contactAvatar}

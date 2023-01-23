@@ -6,6 +6,7 @@ const Categories = ({ categories, filterItems }) => {
       {categories.map((category, index) => {
         return (
           <button
+            key={index}
             className={styles.filtersItem}
             type="submit"
             onClick={() => filterItems(category)}
