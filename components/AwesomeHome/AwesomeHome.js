@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BsArrowRightShort } from "react-icons/bs";
-import { awesomeLinks } from "./awesomeHome-script.js";
+import { awesomeLinks } from "./AwesomeHome-script.js";
 import styles from './AwesomeHome.module.css';
 const AwesomeHome = () => {
     return (
