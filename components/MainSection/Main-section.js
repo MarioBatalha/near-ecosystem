@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { BsArrowRightShort } from "react-icons/bs";
+
 import styles from "./Main-section.module.css";
-import  { awesomeLinks } from "./MainSection-script";
-import TrendingCard from '../TrendingCard/Trending-card';
 import Loading from '../Loading/Loading.js';
 
 import AwesomeHome from "../AwesomeHome/AwesomeHome";
-import Wallet from '../Wallet/Wallet';
 //temporary image
-import heroImg from "../../public/assets/paras-nft.jpeg";
 import NearProtocol from "../NearProtocol/NearProtocol";
 import Trending from "../Trending/Trending";
+import Wallet from "../wallet/wallet";
 
 const MainSection = () => {
   const [ data, setData ] = useState(null);
