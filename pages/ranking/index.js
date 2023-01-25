@@ -3,6 +3,7 @@ import Image from "next/image";
 import Categories from "./../../components/Categories/Categories";
 import styles from "./rank.module.css";
 import Menu from "../../components/Menu/Menu";
+import SearchForm from "../../components/SearchForm/SearchForm";
 
 
 const Ranking = () => {
@@ -55,19 +56,7 @@ const Ranking = () => {
       <div>
         <div className={styles.container}>
           <div className={styles.filters}>
-            <div className={styles.filtersSearch}>
-              <input
-                type="text"
-                className={styles.filtersSearchInput}
-                placeholder="Search"
-              />
-
-              <button
-                className={styles.filtersSearchInput}
-                type="submit"
-              >
-              </button>
-            </div>
+            <SearchForm />
             <Categories categories={categories} filterItems={filterItems} />
           </div>
           <section className={styles.contacts}>
