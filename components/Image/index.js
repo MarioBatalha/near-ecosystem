@@ -1,13 +1,14 @@
 import Image from "next/image"
 import styles from "../Menu/Menu.module.css";
 
-const NextImage = ({ src, alt}) => {
+const NextImage = ({ Icon, projectName}) => {
     return (
-        <Image src={item.Icon}
-        alt={item.projectName}
+        <Image 
+        src={Icon}
+        alt={projectName}
         width={30}
         height={30}
-        className={styles.contactAvatar}></Image>
+        className={styles.contactAvatar} />
     )
 }
 

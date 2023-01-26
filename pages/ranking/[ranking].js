@@ -17,6 +17,7 @@ const RankingDetails = ({
           <NextImage
             src={Icon}
             alt={ProjectName}
+            className={styles.contactAvatar}
           />
           <span className={styles.contactData}>{ProjectName}</span>
           <span className={styles.contactData}>{Category}</span>
