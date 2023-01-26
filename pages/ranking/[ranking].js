@@ -1,5 +1,6 @@
 import Link from '../../components/Link';
 import styles from "./rank.module.css";
+import Image from '../../components/Image';
 
 const RankingDetails = ({
   ProjectName,
@@ -13,12 +14,9 @@ const RankingDetails = ({
     <>
       <div className={styles.item} key={index}>
         <section className={styles.contacts}>
-          <img
+          <Image
             src={Icon}
             alt={ProjectName}
-            width={30}
-            height={30}
-            className={styles.contactAvatar}
           />
           <span className={styles.contactData}>{ProjectName}</span>
           <span className={styles.contactData}>{Category}</span>
