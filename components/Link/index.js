@@ -17,7 +17,7 @@ const NextLink = ({href, children}) => {
 
 export default NextLink;
 
-Link.propTypes = {
+NextLink.propTypes = {
     href: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 }
