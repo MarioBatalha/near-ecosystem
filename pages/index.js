@@ -3,16 +3,18 @@ import React from "react";
 import Layout from "../components/Layout";
 import MainSection from "../components/MainSection/Main-section";
 import styles from "../styles/Deck.module.css";
+import { AppProvider } from "./context";
 
 export default function Home() {
   // const prettifiedData = JSON.stringify(data, null, 2);
 
   return (
-    <div className={styles.container}>
-      <Layout pageTitle="NEAR Projects" />
-      <MainSection />
+    <AppProvider>
+      <div className={styles.container}>
+        <Layout pageTitle="NEAR Projects" />
+        <MainSection />
 
-      {/*<div className={styles.pageHeader}>
+        {/*<div className={styles.pageHeader}>
           <h1>
             Projects on NEAR
             <a href="https://nearprojects.com/code" target="_blank" rel="noopener noreferrer">
@@ -25,6 +27,7 @@ export default function Home() {
          <p>Now open source</p> 
       </div>
      <ProjectCardsContainer/>*/}
-    </div>
+      </div>
+    </AppProvider>
   );
 }
