@@ -1,6 +1,6 @@
 
 import styles from "./Menu.module.css";
-import Image from "../Image";
+import NextImage from "../Image";
 
 const Menu = ({ data }) => {
     return (
@@ -8,7 +8,7 @@ const Menu = ({ data }) => {
             {data.map((item) => (
             <div className={styles.item} key={item.id}>
               <section className={styles.contacts}>
-                <Image
+                <NextImage
                   src={item.Icon}
                   alt={item.projectName}
                 />
