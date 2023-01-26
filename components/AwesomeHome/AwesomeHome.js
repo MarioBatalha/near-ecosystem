@@ -2,28 +2,30 @@ import Image from "next/image";
 import { BsArrowRightShort } from "react-icons/bs";
 import { awesomeLinks } from "./AwesomeHome-script";
 import styles from './AwesomeHome.module.css';
+import NextLink from '../Link';
+
 const AwesomeHome = () => {
     return (
         <div className={styles.awesomeHome}>
           <h1>
-            Explore <a href="">998</a> curated projects building on Near, Aurora
+            Explore <NextLink href="/">998</NextLink> curated projects building on Near, Aurora
             and Octopus ecosystem.
           </h1>
           <div className={styles.awesomeLinks}>
             <div className={styles.heroActions}>
-              <a>
+              <NextLink  href="/">
                 Explore projects
                 <BsArrowRightShort size={25} />
-              </a>
-              <a>
+              </NextLink>
+              <NextLink href="/">
                 Newly added <BsArrowRightShort size={25} />
-              </a>
+              </NextLink>
             </div>
             <div className={styles.heroActions}>
               {awesomeLinks.map((link) => {
                 const { id, text, url, img } = link;
                 return (
-                  <a href={url} key={id} target="_blank" rel='noreferrer'>
+                  <NextLink href={url} key={id} target="_blank" rel='noreferrer'>
                     <Image
                       src={img}
                       alt={text}
@@ -33,7 +35,7 @@ const AwesomeHome = () => {
                     />
                     {text}
                     <BsArrowRightShort size={25} />
-                  </a>
+                  </NextLink>
                 );
               })}
             </div>

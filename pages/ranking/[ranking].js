@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from '../../components/Link';
 import styles from "./rank.module.css";
 
 const RankingDetails = ({
@@ -23,8 +23,8 @@ const RankingDetails = ({
           <span className={styles.contactData}>{ProjectName}</span>
           <span className={styles.contactData}>{Category}</span>
           <span className={styles.contactData}>{ABBV}</span>
-          <Link className="btn btn-primary btn-details">
-            <a href={`/items/${id}`}>details</a>
+          <Link className="btn btn-primary btn-details" href={`/items/${id}`}>
+            details
           </Link>
         </section>
       </div>

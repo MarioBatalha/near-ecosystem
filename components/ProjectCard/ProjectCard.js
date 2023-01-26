@@ -3,7 +3,7 @@ import styles from "./ProjectCard.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { GitHub, Linkedin, Facebook, Twitter, Globe } from 'react-feather';
-
+import NextLink from '../Link';
 /*
   props {
     projectData: {
@@ -60,14 +60,14 @@ const ProjectCard = (props) => {
     // build a tag with properties wrapped around a component
     const buildLink = (component, link) => {
       return (
-        <a
+        <NextLink
           href={link}
           target="_blank"
           rel="noreferrer"
           key={link}
         >
           {component}
-        </a>
+        </NextLink>
       );
     }
 

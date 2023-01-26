@@ -3,19 +3,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/Link';
 
-const Link = ({href, children}) => {
+import styles from '../Navbar/Navbar.module.css';
+
+const NextLink = ({href, children}) => {
     return (
         <Link href={href} passHref>
-         <a>
+         <a className={styles.navLinks}>
             {children}
          </a>
         </Link>
     )
 }
 
-export default Link;
+export default NextLink;
 
-Link.proTypes = {
+Link.propTypes = {
     href: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 }

@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Footer.module.css";
 import footerLinks from "./Footer-script";
+import NextLink from '../Link';
 
 const Footer = () => {
   return (
@@ -20,12 +21,12 @@ const Footer = () => {
           {footerLinks.map((link) => {
             return (
               <li key={link.id}>
-                <a href={link.url} target="_blank" rel="noreferrer">
+                <NextLink href={link.url} target="_blank" rel="noreferrer">
                   <span>
                     {link.title}
                     &#x2197;
                   </span>
-                </a>
+                </NextLink>
               </li>
             );
           })}
@@ -34,9 +35,9 @@ const Footer = () => {
       <div className={styles.footerContainerMade}>
         <p>
           Made with ♥ by{" "}
-          <a href="https://nearfans.com/" target="_blank" rel="noreferrer">
+          <NextLink href="https://nearfans.com/" target="_blank" rel="noreferrer">
             NEARFANS
-          </a>
+          </NextLink>
         </p>
       </div>
     </footer>

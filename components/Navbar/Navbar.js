@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { FaSearch } from "react-icons/fa";
 
 import styles from "./Navbar.module.css";
 import links from "./Navbar-script";
-
+import NextLink from "../Link";
 import Logo from "../../public/assets/awesomenear-logo.svg";
 
 const Navbar = () => {
@@ -30,9 +29,9 @@ const Navbar = () => {
     <nav className={styles.navContainer}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <Link href="/">
+          <NextLink href="/">
             <Image width={200} height={50} src={Logo} alt="Awesome Near logo" />
-          </Link>
+          </NextLink>
           <button className={styles.navToggle} onClick={handleToggleLinks}>
             <HiMenuAlt2 size={30} />
           </button>
@@ -44,12 +43,10 @@ const Navbar = () => {
               const { id, icon, url, text } = link;
               return (
                 <li key={id}>
-                  <Link href={url}>
-                    <div className={styles.navLinks}>
+                  <NextLink href={url}>
                       {icon}
                       {text}
-                    </div>
-                  </Link>
+                  </NextLink>
                 </li>
               );
             })}
