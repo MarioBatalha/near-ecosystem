@@ -7,10 +7,8 @@ import styles from '../Navbar/Navbar.module.css';
 
 const NextLink = ({href, children}) => {
     return (
-        <Link href={href} passHref>
-         <a className={styles.navLinks}>
+        <Link href={href} passHref className={styles.navLinks}>
             {children}
-         </a>
         </Link>
     )
 }

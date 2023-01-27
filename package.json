@@ -2,7 +2,7 @@
   "name": "near-ecosystem",
   "version": "0.1.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -33,10 +33,10 @@
     "fs": "^0.0.1-security",
     "http-proxy-middleware": "^2.0.6",
     "near-api-js": "^0.44.2",
-    "next": "^12.3.4",
-    "react": "18.2.0",
+    "next": "^13.1.5",
+    "react": "^18.2.0",
     "react-calendly": "^4.0.1",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.3.0",
@@ -46,6 +46,6 @@
   },
   "devDependencies": {
     "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "^13.1.5"
   }
 }
