@@ -1,4 +1,4 @@
-import Link from '../../components/Link';
+import NextLink from '../../components/Link';
 import styles from "./rank.module.css";
 import NextImage from '../../components/Image';
 
@@ -22,9 +22,9 @@ const RankingDetails = ({
           <span className={styles.contactData}>{ProjectName}</span>
           <span className={styles.contactData}>{Category}</span>
           <span className={styles.contactData}>{ABBV}</span>
-          <Link className="btn btn-primary btn-details" href={`/items/${id}`}>
+          <NextLink  href={`/items/${id}`}>
             details
-          </Link>
+          </NextLink>
         </section>
       </div>
     </>

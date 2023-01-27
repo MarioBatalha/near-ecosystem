@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Categories from "./../../components/Categories/Categories";
 import styles from "./rank.module.css";
 import Menu from "../../components/Menu/Menu";
