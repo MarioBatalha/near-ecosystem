@@ -7,11 +7,9 @@ const Menu = ({ data }) => {
             {data.map((item, index) => (
             <div className={styles.item} key={index}>
               <section className={styles.contacts}>
-                <Image
+                <img
                   src={item.Icon}
                   alt={item.ProjectName}
-                  width={30}
-                  height={30}
                   className={styles.contactAvatar}
                 />
                 <span className={styles.contactData}>{item.ProjectName}</span>
