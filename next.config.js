@@ -1,1 +1,3 @@
-export const images = ['awesome-near.s3.amazonaws.com'];
+export const images = {
+  domains: ['awesome-near.s3.amazonaws.com'],
+};
