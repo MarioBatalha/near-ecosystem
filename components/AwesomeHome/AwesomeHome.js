@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BsArrowRightShort } from "react-icons/bs";
 import { awesomeLinks } from "./AwesomeHome-script";
 import styles from './AwesomeHome.module.css';
-import NextLink from '../Link';
+import NextLink from '../Link/index.js';
 
 const AwesomeHome = () => {
     return (
