@@ -18,7 +18,7 @@ Explainer: Crunchbase, Dappradar, Canny.io, Reddit all on chain and permissionle
 
 
 # How to Submit
-Make a PR to this repo adding to the nearprojects.json in the [`data`](./data) folder in order to make a proejct request or update with the information.
+Make a PR to this repo adding to the near projects.json in the [`data`](./data) folder in order to make a project request or update with the information.
 
 
 # Roadmap
@@ -30,7 +30,7 @@ Make a PR to this repo adding to the nearprojects.json in the [`data`](./data) f
 
 
 # 💡 Feature Ideas
-- Submit projects (permissionless and on chain)
+- Submit projects (permission less and on chain)
 - Ability for people to sign in and edit with NEAR Wallet (Wallet Selector)
 - Ability for set wallets to own card widgets
 - Project feedback board for each proejct (feature requests, bugs, enhancemenet)

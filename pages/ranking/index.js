@@ -3,11 +3,16 @@ import Categories from "./../../components/Categories/Categories";
 import styles from "./rank.module.css";
 import Menu from "../../components/Menu/Menu";
 
-
 const Ranking = () => {
   const [isLoad, setIslLoad] = useState(true);
   const [data, setData] = useState([]);
-  const allCategories = ['ALL','NEAR','AURORA','OCTOPUS', ...new Set(data.map((item) => item.Category))];
+  const allCategories = [
+    "ALL",
+    "NEAR",
+    "AURORA",
+    "OCTOPUS",
+    ...new Set(data.map((item) => item.Category)),
+  ];
   const [categories, setCategories] = useState(allCategories);
   const [menu, setMenu] = useState(data);
 
@@ -24,20 +29,19 @@ const Ranking = () => {
           }
         })
         .then((data) => {
-          setData(data)
+          setData(data);
         });
-  
     } catch (error) {
       console.log(error, "something went wrong");
     }
   };
 
   const filterItems = (category) => {
-    if (category === 'ALL') {
+    if (category === "ALL") {
       setMenu(data);
       return;
     }
-    const newItems = data.filter(item => item.Series === category);
+    const newItems = data.filter((item) => item.Series === category);
     setMenu(newItems);
   };
 
@@ -64,14 +68,13 @@ const Ranking = () => {
               <button
                 className={styles.filtersSearchInput}
                 type="submit"
-              >
-              </button>
+              ></button>
             </div>
             <Categories categories={categories} filterItems={filterItems} />
           </div>
           <section className={styles.contacts}>
             <article className={styles.contact}>
-              <span ></span>
+              <span></span>
               <span className={styles.contactData}>Project Name</span>
               <span className={styles.contactData}>Category</span>
               <span className={styles.contactData}>ABBV</span>

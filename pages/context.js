@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect } from 'react';
 import { useCallback } from 'react';
 
 const url = 'https://near-api-tau.vercel.app/AllProjects';
@@ -12,7 +12,7 @@ const AppProvider = ({ children }) => {
 
   const handleFetchData = async () => {
     try {
-      await fetch(`${url}`)
+      await fetch(url)
         .then((res) => {
           if (res.ok) {
             return res.json();
@@ -31,7 +31,7 @@ const AppProvider = ({ children }) => {
   const fetchItems = useCallback( async () => {
     setLoading(true)
     try {
-      const response = await fetch(`${url}`)
+      const response = await fetch(url)
 
       const data = await response.json()
     
